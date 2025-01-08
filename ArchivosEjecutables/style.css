@@ -72,3 +72,31 @@ h2
     transform-style: preserve-3d;
     perspective: 500px;
 }
+
+/* PARA CADA EMOJI DEL TABLERO... */
+
+.item
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: #c80;
+    transition: 0.25s;
+}
+
+/* PARA TODAS LAS FICHAS AL INICIALIZAR UNA PARTIDA (REVERSO)... */
+
+.item::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #c30;
+    opacity: 0.5;
+    transition: 0.25s;
+    transform: rotateY(0deg); 
+}
