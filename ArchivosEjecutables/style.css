@@ -85,7 +85,15 @@ h2
     align-items: center;
     font-size: 3em;
     background: #c80;
+    transform: rotateY(180deg);
     transition: 0.25s;
+}
+
+/* AL TAPAR TODAS LAS FICHAS YA DESTAPADAS... */
+
+.item.boxOpen
+{
+    transform: rotateY(0deg);
 }
 
 /* PARA TODAS LAS FICHAS AL INICIALIZAR UNA PARTIDA (REVERSO)... */
@@ -96,7 +104,15 @@ h2
     position: absolute;
     inset: 0;
     background: #c30;
-    opacity: 0.5;
+    /* opacity: 0.85; */
     transition: 0.25s;
     transform: rotateY(0deg); 
+    backface-visibility: hidden;
+}
+
+/* AL DESTAPAR FICHAS TAPADAS DENTRO DEL TABLERO... */
+
+.boxOpen:after
+{
+    transform: rotateY(180deg);
 }
