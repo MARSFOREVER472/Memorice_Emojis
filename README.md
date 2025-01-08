@@ -1,3 +1,3 @@
 # **_Memorice_Emojis_**
 
-## Cómo crear un juego de memoria en JavaScript.
+## _Cómo crear un juego de memoria en JavaScript._
