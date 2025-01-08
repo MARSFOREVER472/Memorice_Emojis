@@ -112,7 +112,8 @@ h2
 
 /* AL DESTAPAR FICHAS TAPADAS DENTRO DEL TABLERO... */
 
-.boxOpen:after
+.boxOpen:after ,
+.boxMatch:after
 {
     transform: rotateY(180deg);
 }
