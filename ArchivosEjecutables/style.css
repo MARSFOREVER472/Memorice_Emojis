@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ff5000;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: #ff7000;
+    padding: 40px 60px; 
+}
+
+/* PARA EL ENCABEZADO... */
+
+h2
+{
+    font-size: 3em;
+    color: #f00;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* PARA EL BOTÓN DE REINICIO... */
+
+.reset
+{
+    padding: 15px 20px;
+    color: #ff9900;
+    background: #530;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* LO CONTRARIO... */
+
+.reset:focus
+{
+    color: #530;
+    background: #ff9000;
+}
+
+/* PARA EL JUEGO... */
+
+.game
+{
+    width: 440px;
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
